@@ -144,6 +144,7 @@ a.link-sf:active:before {
 /* Main Layout */
 #page-container {
   min-width: 320px;
+  height: calc(100vh - 66px);
 }
 
 #page-container:before {
