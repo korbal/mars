@@ -16,8 +16,9 @@ fetch(endpoint)
     data = raw;
     sol_keys = raw.sol_keys;
     latestSol = sol_keys[sol_keys.length - 1];
-    uiMinTemp.textContent = Math.round(data[latestSol].AT.mx);
-    uiMaxTemp.textContent = Math.round(data[latestSol].AT.mn);
+
+    uiMinTemp.textContent = Math.round(data[latestSol].AT.mn);
+    uiMaxTemp.textContent = Math.round(data[latestSol].AT.mx);
 
     sunsetDate = new Date(data[latestSol].First_UTC);
     sunriseDate = new Date(data[latestSol].Last_UTC);
